@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  @font-face {
+      font-family: 'Resist Sans Bold';
+      src: url('../public/fonts/ResistSansDisplay-Bold.otf');
+  }
+  @font-face {
+      font-family: 'Resist Sans Regular';
+      src: url('../public/fonts/ResistSansDisplay-Regular.otf');
+  }
+  @font-face {
+      font-family: 'Resist Sans Medium';
+      src: url('../public/fonts/ResistSansDisplay-Medium.otf');
+  }
+  @font-face {
+      font-family: 'Noto Bold';
+      src: url('../public/fonts/NotoSansJP-Bold.ttf');
+  }
+  @font-face {
+      font-family: 'Old Standard Italic';
+      src: url('../public/fonts/OldStandardTT-Italic.ttf');
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-resist-bold: "Resist Sans Bold", sans-serif;
+  --font-resist-medium: "Resist Sans Medium", sans-serif;
+  --font-resist-regular: "Resist Sans Regular", sans-serif;
+  --font-noto-bold: "Noto Bold";
+  --font-old-standard-italic: "Old Standard Italic";
+
+  --color-seasalt: #f8f9fa;
+  --color-antiflash-white: #e9ecef;
+  --color-platinum: #dee2e6;
+  --color-french-gray: #ced4da;
+  --color-french-gray-2: #adb5bd;
+  --color-slate-gray: #6c757d;
+  --color-outer-space: #495057;
+  --color-onyx: #343a40;
+  --color-eerie-black: #212529;
+}
+
+.container {
+  @apply px-5 mx-auto md:px-0 xl:max-w-[1200px]
+}
+
+.old-italic {
+  font-family: 'Old Standard Italic';
+  font-weight: bold;
+  @apply 2xl:text-4xl
 }

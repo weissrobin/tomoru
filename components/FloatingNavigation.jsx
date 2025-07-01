@@ -1,0 +1,55 @@
+'use client'
+
+import { useState, useEffect } from "react"
+import Link from "next/link";
+import { IconShoppingCart } from "@tabler/icons-react";
+
+export const FloatingNavigation = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const linkClass = 'uppercase text-sm';
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (document.documentElement.scrollTop > 40) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        }
+
+        document.addEventListener('scroll', handleScroll);
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [isScrolled]);
+
+    return (
+        <nav className={`${isScrolled ? '' : '-translate-y-full'} justify-between transition-transform duration-300 py-2 px-5 font-resist-medium z-10 border-eerie-black border-b-2 fixed w-full bg-seasalt dark:bg-black dark:border-seasalt`}>
+            <ul className='flex gap-2 w-full sm:justify-between container mx-auto' role='navigation'>
+                <div className='flex gap-2'>
+                    <li>
+                        <Link href={'menu'} className={linkClass}>Menu</Link>
+                    </li>
+                    <li>
+                        <Link href={'reservation'} className={linkClass}>Reservation</Link>
+                    </li>
+                    <li className='hidden sm:block'>
+                        <Link href={'cart'} className={linkClass}>Cart</Link>
+                    </li>
+                </div>
+                <div className='flex gap-2 flex-1 sm:flex-0'>
+                    <li>
+                        <Link href={'photo'} className={linkClass}>About</Link>
+                    </li>
+                    <li>
+                        <Link href={'contact'} className={linkClass}>Contact</Link>
+                    </li>
+                </div>
+                <button className='sm:hidden' aria-roledescription='Enter your order cart'>
+                    <IconShoppingCart></IconShoppingCart>
+                </button>
+            </ul>
+        </nav>
+    )
+}
