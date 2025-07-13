@@ -208,12 +208,12 @@ export const Map = () => {
             new window.google.maps.Marker({
                 position: { lat: 35.6719, lng: 139.7650 },
                 map,
-                title: 'Praha!',
+                title: 'Tomuru',
             });
         });
     }, []);
 
     return (
-        <div ref={mapRef} className='h-50 w-full'/>
+        <div ref={mapRef} className='h-50 w-full xl:h-90'/>
     );
 };

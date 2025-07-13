@@ -18,10 +18,7 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang='en' className={theme}>
-      <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALrIVg4b_3xwpUq4qD2uxk7ciTYp5-2Jg&callback=initMap" async defer loading='async'></script>
       <body className='bg-seasalt text-eerie-black dark:bg-black dark:text-seasalt'>
-          <Header></Header>
           <Theme></Theme>
           {children}
           <Footer></Footer>

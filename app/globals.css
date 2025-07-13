@@ -52,3 +52,7 @@
   font-weight: bold;
   @apply 2xl:text-4xl
 }
+
+.old-italic.smaller {
+  @apply 2xl:text-2xl
+}

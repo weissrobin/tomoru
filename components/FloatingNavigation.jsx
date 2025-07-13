@@ -6,7 +6,7 @@ import { IconShoppingCart } from "@tabler/icons-react";
 
 export const FloatingNavigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const linkClass = 'uppercase text-sm';
+    const linkClass = 'uppercase text-sm lg:text-base';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,9 +25,9 @@ export const FloatingNavigation = () => {
     }, [isScrolled]);
 
     return (
-        <nav className={`${isScrolled ? '' : '-translate-y-full'} justify-between transition-transform duration-300 py-2 px-5 font-resist-medium z-10 border-eerie-black border-b-2 fixed w-full bg-seasalt dark:bg-black dark:border-seasalt`}>
+        <nav className={`${isScrolled ? '' : '-translate-y-full'} justify-between transition-transform duration-300 py-2 lg:py-5 px-5 font-resist-medium z-10 border-eerie-black border-b-2 fixed w-full bg-seasalt dark:bg-black dark:border-seasalt`}>
             <ul className='flex gap-2 w-full sm:justify-between container mx-auto' role='navigation'>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 lg:gap-5'>
                     <li>
                         <Link href={'menu'} className={linkClass}>Menu</Link>
                     </li>
@@ -38,7 +38,7 @@ export const FloatingNavigation = () => {
                         <Link href={'cart'} className={linkClass}>Cart</Link>
                     </li>
                 </div>
-                <div className='flex gap-2 flex-1 sm:flex-0'>
+                <div className='flex gap-2 lg:gap-5 flex-1 sm:flex-0'>
                     <li>
                         <Link href={'photo'} className={linkClass}>About</Link>
                     </li>
