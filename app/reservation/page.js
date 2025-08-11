@@ -6,13 +6,10 @@ export default async function ReservationPage() {
     return (
         <>
             <HeaderSub />
-            <main className="flex flex-col items-center justify-center min-h-screen">
+            <main className="min-h-screen mt-20">
                 <div className="container relative">
                     <Image src={'/reservation.webp'} width={1920} height={1080} alt='Reservation Background Illustration'></Image>
-                    <div>
-                        <h1 className="text-2xl font-bold mb-4">Reservation Page</h1>
-                        <ReservationForm />
-                    </div>
+                    <ReservationForm />
                 </div>
             </main>
         </>

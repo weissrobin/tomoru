@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @layer base {
   @font-face {
@@ -55,4 +56,8 @@
 
 .old-italic.smaller {
   @apply 2xl:text-2xl
+}
+
+.btn {
+  @apply bg-eerie-black hover:-translate-y-0.5 transition-transform;
 }

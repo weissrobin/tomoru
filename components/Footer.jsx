@@ -6,10 +6,10 @@ export const Footer = () => {
     const liClass = 'flex items-center md:text-base';
     const arrowClr = '#212529';
     const arrowSize = 20;
-    const spanClass = 'block mt-0.5';
+    const spanClass = 'block mt-0.5 hover:underline';
 
     return (
-        <footer className='my-10'>
+        <footer className='py-10'>
             <div className='container'>
                 <article className='md:grid grid-cols-8 items-center xl:px-10'>
                     <div className='md:col-span-4'>
