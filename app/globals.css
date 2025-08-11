@@ -42,6 +42,27 @@
   --color-outer-space: #495057;
   --color-onyx: #343a40;
   --color-eerie-black: #212529;
+
+  --animate-fade-in: fade-in 4s ease-in-out forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
 }
 
 .container {

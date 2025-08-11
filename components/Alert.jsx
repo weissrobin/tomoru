@@ -1,6 +1,6 @@
 export const Alert = ({ product, message, type, price }) => {
     return (
-        <div role="alert" className="rounded-md border border-gray-300 bg-white p-4 shadow-sm max-w-[400px] w-full fixed top-10 left-1/2 -translate-x-1/2 z-50">
+        <div role="alert" className="rounded-md border animate-fade-in border-gray-300 bg-white p-4 shadow-sm max-w-[400px] w-full fixed top-10 left-1/2 -translate-x-1/2 z-50">
             <div className="flex items-start gap-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
