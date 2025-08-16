@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useContext } from 'react';
 
 const OrderContext = createContext();
 
@@ -19,8 +19,12 @@ export const OrderProvider = ({ children }) => {
             ...item,
             quantity: item.quantity + quantity
           };
+        } else {
+          return {
+            ...item
+          }
         }
-      })
+      });
       setOrderItems(updatedItems);
       saveOrderStorage(updatedItems);
     } else {
@@ -29,7 +33,6 @@ export const OrderProvider = ({ children }) => {
         saveOrderStorage(newOrder);
         return newOrder;
       });
-      saveOrderStorage(orderItems);
     }
   };
 
