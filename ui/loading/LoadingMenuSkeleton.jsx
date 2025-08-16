@@ -23,7 +23,7 @@ export default function LoadingMenuSkeleton() {
 
                 <form className="mt-4 flex gap-4">
                 <button className="bg-gray-200 w-full text-gray-200 text-sm px-4 py-3">
-                    Add to Cart
+                    Add to Order
                 </button>
                 </form>
             </div>

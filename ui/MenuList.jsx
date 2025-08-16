@@ -1,6 +1,6 @@
-import { AddToCart } from "@/components/AddToCard";
+import { AddToOrder } from "@/components/AddToOrder";
 
-export function MenuList({ menu}) {
+export function MenuList({ menu }) {
     return (
         <>
             {menu.map((item, index) => (
@@ -26,7 +26,7 @@ export function MenuList({ menu}) {
                             {item.description}
                         </p>
 
-                        <AddToCart item={item} />
+                        <AddToOrder item={item} />
                     </div>
                 </a>
             ))}

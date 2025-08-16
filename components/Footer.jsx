@@ -31,7 +31,7 @@ export const Footer = () => {
                                 </ul>
                             </div>
                             <h2 className='font-resist-regular mb-7 mt-10'>Opening Hours</h2>
-                            <ul className='font-resist-regular text-sm md:text-base' role='navigation'>
+                            <ul className='font-resist-regular text-sm md:text-base' role="list">
                                 <li>Monday - Friday: 10:00 AM – 10:00 PM</li>
                                 <li>Saturday: 11:00 AM – 11:00 PM</li>
                                 <li>Sunday: Closed</li>

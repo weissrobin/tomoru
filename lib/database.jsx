@@ -12,4 +12,4 @@ export const getMenu = async (category) => {
             }
         }, 2000);
     });
-} 
+}

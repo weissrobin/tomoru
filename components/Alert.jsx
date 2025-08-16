@@ -1,4 +1,4 @@
-export const Alert = ({ product, message, type, price }) => {
+export const Alert = ({ product, message, type, price, quantity }) => {
     return (
         <div role="alert" className="rounded-md border animate-fade-in border-gray-300 bg-white p-4 shadow-sm max-w-[400px] w-full fixed top-10 left-1/2 -translate-x-1/2 z-50">
             <div className="flex items-start gap-4">
@@ -20,14 +20,14 @@ export const Alert = ({ product, message, type, price }) => {
                 <div className="flex-1">
                     <strong className="font-medium text-gray-900">{message}</strong>
 
-                    <p className="mt-0.5 text-sm text-gray-700">{product} for <strong>{price}</strong></p>
+                    <p className="mt-0.5 text-sm text-gray-700">Added {quantity} {product} for <strong>{price}</strong></p>
 
                     <div className="mt-3 flex items-center gap-2">
                         <button
                             type="button"
                             className="rounded border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-100"
                         >
-                            See Cart
+                            See Order
                         </button>
 
                         <button

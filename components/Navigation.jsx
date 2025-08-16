@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconShoppingCart } from '@tabler/icons-react';
+import { IconShoppingBag } from '@tabler/icons-react';
 
 export const Navigation = () => {
     const linkClass = 'uppercase text-sm relative lg:text-base after:content-[""] after:absolute after:w-0 hover:after:w-full after:transition-[width] after:duration-400 after:h-[3px] after:bg-eerie-black dark:after:bg-white after:top-full after:left-0';
@@ -15,7 +15,7 @@ export const Navigation = () => {
                         <Link href={'reservation'} className={linkClass}>Reservation</Link>
                     </li>
                     <li className='hidden sm:block'>
-                        <Link href={'cart'} className={linkClass}>Cart</Link>
+                        <Link href={'order'} className={linkClass}>Order</Link>
                     </li>
                 </div>
                 <div className='flex gap-2 lg:gap-5 flex-1 sm:flex-0'>
@@ -26,9 +26,9 @@ export const Navigation = () => {
                         <Link href={'contact'} className={linkClass}>Contact</Link>
                     </li>
                 </div>
-                <button className='sm:hidden' aria-roledescription='Enter your order cart'>
-                    <IconShoppingCart></IconShoppingCart>
-                </button>
+                <Link href='/order/' className="sm:hidden">
+                    <IconShoppingBag></IconShoppingBag>
+                </Link>
             </ul>
         </nav>
     )

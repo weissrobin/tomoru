@@ -1,32 +1,46 @@
 'use client'
-import { useCart } from '@/contexts/CartContext';
-import { useState } from 'react';
+import { useOrder } from '@/contexts/OrderContext';
+import { useState, useEffect } from 'react';
 import { Alert } from './Alert';
 
-export const AddToCart = ({ item }) => {
-  const { addToCart } = useCart();
+export const AddToOrder = ({ item }) => {
+  const { addToOrder } = useOrder();
   const [added, setAdded] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const [canAdd, setCanAdd] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-        addToCart(item, quantity);
+      if(canAdd) {
+        addToOrder(item, quantity);
+
         setAdded(true);
+        setCanAdd(false);
+      }
     } catch (e) {
         setAdded(false);
     }
   };
 
   const handleQuantity = (e) => {
-    console.log(parseInt(e.target.value));
     if(e.target.value <= 0) {
         setQuantity(1);
-        console.log(parseInt(e.target.value));
     } else {
         setQuantity(parseInt(e.target.value) || 1);
     }
   }
+
+  useEffect(() => {
+    if (!added) return;
+
+    const timer = setTimeout(() => {
+      setAdded(false);
+      setCanAdd(true);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, [added]);
 
   return (
     <>
@@ -36,7 +50,7 @@ export const AddToCart = ({ item }) => {
         type="submit"
         className="hover:cursor-pointer focus:bg-seasalt focus:text-eerie-black block w-full rounded-sm bg-eerie-black px-4 py-3 text-sm font-medium text-seasalt transition hover:scale-105"
       >
-        Add to Cart
+        Add to Order
       </button>
     </form>
       {added && (
@@ -44,7 +58,8 @@ export const AddToCart = ({ item }) => {
         <Alert
           product={item.name}
           price={item.price}
-          message="Product added to cart"
+          quantity={quantity}
+          message="Product added to order"
           type="success"
         />
       </>
