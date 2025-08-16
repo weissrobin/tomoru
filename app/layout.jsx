@@ -12,8 +12,14 @@ import { cookies } from "next/headers";
 
 export default async function RootLayout({ children }) {
   const cookieStore = await cookies();
+  const themeCookie = cookieStore.get('theme');
+  let theme = '';
 
-  const theme = cookieStore.get('theme').value || 'light';
+  if (!themeCookie) {
+    theme = 'light'; 
+  } else {
+    theme = themeCookie.value;
+  }
 
   return (
     <html lang='en' className={theme}>
