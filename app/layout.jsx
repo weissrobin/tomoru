@@ -12,13 +12,12 @@ import { cookies } from "next/headers";
 
 export default async function RootLayout({ children }) {
   const cookieStore = await cookies();
-  const themeCookie = cookieStore.get('theme');
   let theme = '';
-
-  if (!themeCookie) {
-    theme = 'light'; 
+  
+  if(!cookieStore.get('theme')) {
+    theme = 'light'
   } else {
-    theme = themeCookie.value;
+    theme = cookieStore.get('theme').value    
   }
 
   return (
