@@ -1,8 +1,6 @@
 'use client'
 
 import { useState, useEffect } from "react"
-
-// Using Lucide icons since Tabler icons aren't available
 import { Moon, Sun } from "lucide-react"
 
 export const Theme = () => {
@@ -12,18 +10,15 @@ export const Theme = () => {
   const handleSwitch = (newTheme) => {
     if (!newTheme) return;
     
-    // Remove previous theme class
     if (theme) {
       document.documentElement.classList.remove(theme);
     }
     
-    // Add new theme class
     document.documentElement.classList.add(newTheme);
     setTheme(newTheme);
-    
-    // Save to cookie (only in browser environment)
+
     if (typeof document !== 'undefined') {
-      document.cookie = `theme=${newTheme}; path=/; max-age=31536000`; // 1 year expiry
+      document.cookie = `theme=${newTheme}; path=/; max-age=31536000`;
     }
   };
 
@@ -41,17 +36,14 @@ export const Theme = () => {
   };
 
   useEffect(() => {
-    // Set mounted to true to avoid hydration mismatch
     setMounted(true);
     
-    // Get saved theme from cookie or use system preference
     const savedTheme = getCookieValue('theme');
     let initialTheme = 'light';
     
     if (savedTheme) {
       initialTheme = savedTheme;
     } else if (typeof window !== 'undefined' && window.matchMedia) {
-      // Check system preference
       initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
     
@@ -59,7 +51,6 @@ export const Theme = () => {
     document.documentElement.classList.add(initialTheme);
   }, []);
 
-  // Prevent rendering during hydration to avoid mismatch
   if (!mounted) {
     return null;
   }
