@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react"
-import { Moon, Sun } from "lucide-react"
+import { IconMoon, IconSun } from "@tabler/icons-react";
 
 export const Theme = () => {
   const [theme, setTheme] = useState('light');
@@ -16,9 +16,9 @@ export const Theme = () => {
     
     document.documentElement.classList.add(newTheme);
     setTheme(newTheme);
-
+    
     if (typeof document !== 'undefined') {
-      document.cookie = `theme=${newTheme}; path=/; max-age=31536000`;
+      document.cookie = `theme=${newTheme}; path=/; max-age=31536000`; 
     }
   };
 
@@ -66,9 +66,9 @@ export const Theme = () => {
       onClick={() => handleSwitch(theme === 'dark' ? 'light' : 'dark')}
     >
       {theme === 'dark' ? (
-        <Sun className="w-5 h-5" />
+        <IconSun className="w-5 h-5" />
       ) : (
-        <Moon className="w-5 h-5" />
+        <IconMoon className="w-5 h-5" />
       )}
     </button>
   );
