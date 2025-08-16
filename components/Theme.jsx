@@ -13,7 +13,7 @@ export const Theme = () => {
     if (theme) {
       document.documentElement.classList.remove(theme);
     }
-    
+     
     document.documentElement.classList.add(newTheme);
     setTheme(newTheme);
     
