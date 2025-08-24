@@ -24,7 +24,7 @@ export const MenuClient = () => {
 
   useEffect(() => {
     fetchMenu();
-  }, [category]);  // tady musí být category, ne menu!
+  }, [category]);
 
   return (
     <>

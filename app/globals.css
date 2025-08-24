@@ -42,6 +42,7 @@
   --color-outer-space: #495057;
   --color-onyx: #343a40;
   --color-eerie-black: #212529;
+  --color-admin-link: rgba(100, 100, 100, .4);
 
   --animate-fade-in: fade-in 4s ease-in-out forwards;
 

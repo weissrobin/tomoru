@@ -46,7 +46,7 @@ export const FloatingNavigation = () => {
                         <Link href={'contact'} className={linkClass}>Contact</Link>
                     </li>
                 </div>
-                <Link href='/order/' >
+                <Link href='/order/' className="sm:hidden">
                     <IconShoppingBag></IconShoppingBag>
                 </Link>
             </ul>
