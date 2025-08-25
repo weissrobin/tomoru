@@ -168,3 +168,86 @@ export const ReservationsByDate = [
     confirmed: 27
   }
 ];
+
+export const Reservations = [
+  {
+    id: 1,
+    name: "John Doe",
+    date: "2025-08-26",
+    time: "18:30",
+    guests: 4,
+    status: "Upcoming",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    date: "2025-08-25",
+    time: "20:00",
+    guests: 2,
+    status: "Ongoing",
+  },
+  {
+    id: 3,
+    name: "Michael Brown",
+    date: "2025-08-24",
+    time: "19:00",
+    guests: 3,
+    status: "Canceled",
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    date: "2025-08-27",
+    time: "17:45",
+    guests: 5,
+    status: "Upcoming",
+  },
+  {
+    id: 5,
+    name: "Daniel Wilson",
+    date: "2025-08-23",
+    time: "18:00",
+    guests: 2,
+    status: "Canceled",
+  },
+  {
+    id: 6,
+    name: "Sophia Martinez",
+    date: "2025-08-26",
+    time: "19:30",
+    guests: 6,
+    status: "Upcoming",
+  },
+  {
+    id: 7,
+    name: "Liam Johnson",
+    date: "2025-08-25",
+    time: "21:00",
+    guests: 3,
+    status: "Ongoing",
+  },
+  {
+    id: 8,
+    name: "Olivia Taylor",
+    date: "2025-08-22",
+    time: "20:15",
+    guests: 2,
+    status: "Canceled",
+  },
+  {
+    id: 9,
+    name: "Noah Anderson",
+    date: "2025-08-28",
+    time: "18:00",
+    guests: 4,
+    status: "Upcoming",
+  },
+  {
+    id: 10,
+    name: "Ava Thomas",
+    date: "2025-08-25",
+    time: "19:45",
+    guests: 2,
+    status: "Ongoing",
+  },
+];

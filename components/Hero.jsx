@@ -13,7 +13,7 @@ export const Hero = () => {
                     src="/hero.webp"
                     width={1920}
                     height={1280}
-                    alt="Hero image"
+                    alt="Intro image of Tomoru Restaurant"
                     priority
                 />
             </div>

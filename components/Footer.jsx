@@ -22,12 +22,12 @@ export const Footer = () => {
                             <div className='flex gap-5 mt-10'>
                                 <ul className='font-resist-regular text-sm space-y-1'>
                                     <li className={liClass}><Link href='/'><span className={spanClass}>Home</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
-                                    <li className={liClass}><Link href='/'><span className={spanClass}>Order</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
-                                    <li className={liClass}><Link href='/'><span className={spanClass}>Contact us</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
+                                    <li className={liClass}><Link href='/order/'><span className={spanClass}>Order</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
+                                    <li className={liClass}><Link href='/contact/'><span className={spanClass}>Contact us</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
                                 </ul>
                                 <ul className='font-resist-regular text-sm space-y-1'>
-                                    <li className={liClass}><Link href='/'><span className={spanClass}>Terms of use</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
-                                    <li className={liClass}><Link href='/'><span className={spanClass}>Team</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
+                                    <li className={liClass}><Link href='/terms-of-use/'><span className={spanClass}>Terms of use</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
+                                    <li className={liClass}><Link href='/team'><span className={spanClass}>Team</span></Link><IconArrowUpRight className='text-eerie-black dark:text-white' size={arrowSize}></IconArrowUpRight></li>
                                 </ul>
                             </div>
                             <h2 className='font-resist-regular mb-7 mt-10'>Opening Hours</h2>

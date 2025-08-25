@@ -14,3 +14,42 @@ export const OrdersData = [
   { date: '2025-08-23', orders: 70, revenue: 1835.00, avgOrderValue: 26.21 },
   { date: '2025-08-24', orders: 68, revenue: 1764.30, avgOrderValue: 25.94 },
 ];
+
+export const Orders = [
+  {
+    id: 101,
+    customer: "John Doe",
+    date: "2025-08-25",
+    time: "18:00",
+    items: ["Ramen Shoyu", "Matcha Cheesecake"],
+    total: 34.5,
+    status: "Completed",
+  },
+  {
+    id: 102,
+    customer: "Jane Smith",
+    date: "2025-08-25",
+    time: "18:45",
+    items: ["Sushi Set Sakura"],
+    total: 22.0,
+    status: "In Progress",
+  },
+  {
+    id: 103,
+    customer: "Michael Brown",
+    date: "2025-08-25",
+    time: "19:15",
+    items: ["Unagi Don", "Tempura Ebi", "Green Tea"],
+    total: 42.0,
+    status: "Canceled",
+  },
+  {
+    id: 104,
+    customer: "Emily Davis",
+    date: "2025-08-24",
+    time: "20:00",
+    items: ["Sushi Set Sakura", "Ramen Shoyu"],
+    total: 44.5,
+    status: "Completed",
+  },
+];

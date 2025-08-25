@@ -6,7 +6,7 @@ import { CustomTooltip } from './CustomTooltip';
 
 export const Card = ({ data, dataKey, xAxisKey, mainHeading, mainLabel, showData, color, anotherLabel, type }) => {
     return (
-        <div className="bg-[#0a0a0a] h-60 rounded-md border border-[#ffffff24] p-5">
+        <div className="bg-[#0a0a0a] h-full rounded-md border border-[#ffffff24] p-5">
             <div>
                 <h2 className='text-lg'>{mainHeading}</h2>
                 <p className='text-sm'>{mainLabel}</p>
@@ -25,7 +25,11 @@ export const Card = ({ data, dataKey, xAxisKey, mainHeading, mainLabel, showData
                             <Line type="linear" dataKey={dataKey} stroke={color} strokeWidth={2} dot={false} />
                         </LineChart>
                         :
-                        'Ahoj'
+                        <PieChart>
+                            <Pie data={data} innerRadius={50} dataKey={dataKey} stroke='false'></Pie>
+                            <Legend layout='PolarLayout'></Legend>
+                            <Tooltip content={<CustomTooltip dataKey={showData} anotherKey={anotherLabel}></CustomTooltip>} />
+                        </PieChart>
                     }
                 </ResponsiveContainer>
             </div>

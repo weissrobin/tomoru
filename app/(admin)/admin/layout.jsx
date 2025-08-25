@@ -16,7 +16,7 @@ export default async function AdminLayout({ children }) {
             <body className={`bg-black ${geist.className} min-h-[100vh]`}>
                 <Header></Header>
                 {children}
-                <div className='absolute bottom-5 left-5'>
+                <div className='fixed bottom-2 left-2 lg:bottom-5 lg:left-5'>
                     <p>© System by Robin Weiss</p>
                 </div>
             </body>

@@ -15,7 +15,7 @@ export default function Home() {
                 <p className="font-resist-regular text-xl md:text-3xl 2xl:text-4xl">
                   Experience <span className="old-italic">refined</span> Japanese <span className="old-italic">flavors</span> in a space where <span className="old-italic">stillness</span> meets <span className="old-italic">warmth</span>, filled with <span className="old-italic">light</span>, <span className="old-italic">care</span>, and <span className="old-italic">lasting moments</span> that stay with you.
                 </p>
-                <MainButton text='Read more' href='/about'></MainButton>
+                <MainButton text='Abous us' href='/about'></MainButton>
                 <Image src={'/about.webp'} width={1800} height={1800} alt='Restaurant doors' className='mt-18 2xl:mt-45'></Image>
               </div>
               <div className='md:col-span-4'>
@@ -29,7 +29,7 @@ export default function Home() {
               <p className='font-resist-regular text-lg md:text-2xl md:text-center'>Discover the <span className="old-italic smaller">essence</span> of Japanese cuisine — delicate, seasonal, and <span className="old-italic smaller">artfully</span> presented.</p>
               <div className='grid md:grid-cols-8 md:gap-10'>
                 <article className='mt-5 md:mt-20 md:col-span-8 grid md:grid-cols-8 md:gap-10'>
-                  <Image src={'/food.webp'} width={1920} height={1080} alt='Food example' className='mt-18 md:mt-0 md:col-span-4'></Image>
+                  <Image src={'/food.webp'} width={1920} height={1080} alt='Sushi Setto Preview' className='mt-18 md:mt-0 md:col-span-4'></Image>
                   <div className='md:col-span-2'>
                     <h2 className='old-italic text-xl mt-5 md:mt-0'>Sushi Setto</h2>
                     <p className='font-resist-regular 2xl:text-2xl'>$7.99</p>
@@ -37,7 +37,7 @@ export default function Home() {
                   <p className='font-resist-regular text-base mt-4 md:col-span-5 md:text-lg 2xl:text-2xl'><span className="old-italic text-lg smaller">Sushi Setto</span> A curated selection of premium nigiri and rolls, paired with traditional garnishes and green tea — a true taste of Japan in every bite.</p>
                 </article>
                 <article className='mt-5 md:mt-0 md:col-span-8 grid md:grid-cols-8 md:gap-10 2xl:mt-30'>
-                  <Image src={'/matcha.webp'} width={1920} height={1080} alt='Food example' className='mt-18 md:mt-0 md:col-span-4 md:col-start-4'></Image>
+                  <Image src={'/matcha.webp'} width={1920} height={1080} alt='Matcha tea Preview' className='mt-18 md:mt-0 md:col-span-4 md:col-start-4'></Image>
                   <div className='md:row-start-1 md:col-span-2'>
                     <h2 className='old-italic text-xl mt-5 md:mt-0'>Matcha Tea</h2>
                     <p className='font-resist-regular'>$1.99</p>

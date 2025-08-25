@@ -23,12 +23,13 @@ export const Alert = ({ product, message, type, price, quantity }) => {
                     <p className="mt-0.5 text-sm text-gray-700">Added {quantity} {product} for <strong>{price}</strong></p>
 
                     <div className="mt-3 flex items-center gap-2">
-                        <button
-                            type="button"
+                        <Link
+                            href='/order/'
+                            title='See the order'
                             className="rounded border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-100"
                         >
                             See Order
-                        </button>
+                        </Link>
 
                         <button
                             type="button"

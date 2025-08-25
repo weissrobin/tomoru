@@ -26,7 +26,8 @@ export const Navigation = () => {
                         <Link href={'contact'} className={linkClass}>Contact</Link>
                     </li>
                 </div>
-                <Link href='/order/' className="sm:hidden">
+                <Link href='/order/' className="sm:hidden" title="See the order page">
+                    <p className='sr-only'>Order</p>
                     <IconShoppingBag></IconShoppingBag>
                 </Link>
             </ul>
