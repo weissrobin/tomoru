@@ -12,7 +12,7 @@ export const Order = () => {
   const [orderItems, setOrderItems] = useState([]);
   const [price, setPrice] = useState();
 
-  const inputClass = 'bg-white rounded-sm w-full py-1 px-2 focus-visible:outline-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2';
+  const inputClass = 'bg-white rounded-sm w-full py-1 px-2 focus-visible:outline-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 border border-[#00000038]';
   const labelClass = 'font-resist-regular';
 
   const renderOrder = () => {
@@ -70,7 +70,37 @@ export const Order = () => {
                   <input type="text" id="address" name="address" className={inputClass}/>
                 </label>
               </div>
+              <div className="col-span-4">
+                <p className="font-resist-regular mb-2">How would you like your order?</p>
+                <div className="flex gap-3">
+                  <label className="flex-1 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="orderType"
+                      value="Delivery"
+                      className="hidden peer"
+                      defaultChecked
+                    />
+                    <div className="peer-checked:bg-indigo-600 peer-checked:text-white border border-[#00000038] text-center py-2 rounded-md">
+                      Delivery
+                    </div>
+                  </label>
+
+                  <label className="flex-1 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="orderType"
+                      value="TakeOut"
+                      className="hidden peer"
+                    />
+                    <div className="peer-checked:bg-indigo-600 peer-checked:text-white border border-[#00000038] text-center py-2 rounded-md">
+                      Take Out
+                    </div>
+                  </label>
+                </div>
+              </div>
             </div>
+
             <button type='submit' className="mt-5 bg-indigo-600 cursor-pointer block hover:bg-indigo-700 font-semibold text-white w-full rounded-sm py-2 text-lg">Pay</button>
           </form>
       </div>

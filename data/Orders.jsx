@@ -1,0 +1,16 @@
+export const OrdersData = [
+  { date: '2025-08-11', orders: 32, revenue: 768.40, avgOrderValue: 24.01 },
+  { date: '2025-08-12', orders: 45, revenue: 1123.70, avgOrderValue: 24.97 },
+  { date: '2025-08-13', orders: 38, revenue: 986.30, avgOrderValue: 25.96 },
+  { date: '2025-08-14', orders: 51, revenue: 1270.00, avgOrderValue: 24.90 },
+  { date: '2025-08-15', orders: 60, revenue: 1582.90, avgOrderValue: 26.38 },
+  { date: '2025-08-16', orders: 74, revenue: 1943.20, avgOrderValue: 26.26 },
+  { date: '2025-08-17', orders: 81, revenue: 2135.50, avgOrderValue: 26.35 },
+  { date: '2025-08-18', orders: 34, revenue: 823.20, avgOrderValue: 24.21 },
+  { date: '2025-08-19', orders: 43, revenue: 1072.40, avgOrderValue: 24.94 },
+  { date: '2025-08-20', orders: 39, revenue: 963.00, avgOrderValue: 24.69 },
+  { date: '2025-08-21', orders: 50, revenue: 1290.60, avgOrderValue: 25.81 },
+  { date: '2025-08-22', orders: 55, revenue: 1438.70, avgOrderValue: 26.16 },
+  { date: '2025-08-23', orders: 70, revenue: 1835.00, avgOrderValue: 26.21 },
+  { date: '2025-08-24', orders: 68, revenue: 1764.30, avgOrderValue: 25.94 },
+];

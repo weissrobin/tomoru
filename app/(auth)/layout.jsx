@@ -11,7 +11,7 @@ const geist = Geist({
 export default async function LoginLayout({ children }) {
     return (
         <html>
-            <body className={`bg-black min-h-[100vh] flex items-center justify-center ${inter.className}`}>
+            <body className={`bg-black min-h-[100vh] flex items-center justify-center ${geist.className}`}>
                 {children}
                 <div className='absolute bottom-5 left-5'>
                     <p>© System by Robin Weiss</p>
