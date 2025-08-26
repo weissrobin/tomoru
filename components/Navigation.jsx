@@ -6,7 +6,7 @@ export const Navigation = () => {
 
     return (
         <nav className='py-2 px-5 lg:py-5 md:px-0 font-resist-medium border-eerie-black border-b-2 dark:border-seasalt'>
-            <ul className='flex gap-2 w-full sm:justify-between container mx-auto' role='navigation'>
+            <div className='flex gap-2 w-full sm:justify-between container mx-auto'>
                 <ul className='flex gap-2 lg:gap-5' role="navigation">
                     <li>
                         <Link href={'menu'} className={linkClass}>Menu</Link>
@@ -30,7 +30,7 @@ export const Navigation = () => {
                     <p className='sr-only'>Order</p>
                     <IconShoppingBag></IconShoppingBag>
                 </Link>
-            </ul>
+            </div>
         </nav>
     )
 }
