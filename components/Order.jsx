@@ -72,7 +72,7 @@ export const Order = () => {
               </div>
               <div className="col-span-4">
                 <p className="font-resist-regular mb-2">How would you like your order?</p>
-                <div className="flex gap-3">
+                <div className="flex gap-3 font-resist-regular">
                   <label className="flex-1 cursor-pointer">
                     <input
                       type="radio"

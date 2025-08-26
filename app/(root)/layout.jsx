@@ -23,9 +23,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang='en' className={theme}>
       <body className='bg-seasalt text-eerie-black dark:bg-black dark:text-seasalt'>
-          <Theme></Theme>
           {children}
           <Footer></Footer>
+          <Theme></Theme>
       </body>
     </html>
   );
