@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const Alert = ({ product, message, type, price, quantity }) => {
     return (
         <div role="alert" className="rounded-md border animate-fade-in border-gray-300 bg-white p-4 shadow-sm max-w-[400px] w-full fixed top-10 left-1/2 -translate-x-1/2 z-50">
