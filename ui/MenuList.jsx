@@ -7,6 +7,7 @@ export function MenuList({ menu }) {
                 <a
                     className="group relative block overflow-hidden rounded-sm shadow-md"
                     key={index}
+                    href="#"
                 >
                     <input type="hidden" value={item.types} />
                     <img
