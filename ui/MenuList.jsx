@@ -4,10 +4,9 @@ export function MenuList({ menu }) {
     return (
         <>
             {menu.map((item, index) => (
-                <a
+                <div
                     className="group relative block overflow-hidden rounded-sm shadow-md"
                     key={index}
-                    href="#"
                 >
                     <input type="hidden" value={item.types} />
                     <img
@@ -29,7 +28,7 @@ export function MenuList({ menu }) {
 
                         <AddToOrder item={item} />
                     </div>
-                </a>
+                </div>
             ))}
         </>
     );
