@@ -15,7 +15,7 @@
     "chart.js": "^4.5.0",
     "iron-session": "^8.0.4",
     "jose": "^6.0.13",
-    "next": "15.3.4",
+    "next": "15.3.8",
     "next-session": "^4.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
