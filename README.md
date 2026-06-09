@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tomoru 🍣
 
-## Getting Started
+## 🇨🇿 O projektu
 
-First, run the development server:
+Tomoru je koncept moderní webové prezentace prémiové japonské restaurace inspirované elegancí a atmosférou tokijské čtvrti Ginza. Projekt propojuje minimalistický design, plynulé animace a responzivní uživatelské rozhraní s cílem vytvořit vizuálně působivý a autentický digitální zážitek.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Web byl vytvořen s důrazem na výkon, přístupnost a moderní frontendové postupy. Slouží jako ukázka tvorby prémiového prezentačního webu a demonstrace schopností v oblasti UI/UX designu a frontend vývoje.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Hlavní vlastnosti
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* ✨ Moderní a elegantní design
+* 🎌 Vizuální identita inspirovaná Japonskem
+* 📱 Plně responzivní rozhraní
+* 🎭 Plynulé animace a přechody
+* ⚡ Optimalizace výkonu a uživatelského zážitku
+* 🚀 Vytvořeno pomocí Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🇬🇧 About
 
-To learn more about Next.js, take a look at the following resources:
+Tomoru is a concept website for a premium Japanese restaurant inspired by the elegance and atmosphere of Tokyo’s Ginza district. The project combines minimalist design, smooth animations, and a responsive user interface to create an immersive and visually engaging digital experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built with a strong focus on performance, accessibility, and modern frontend practices, the website serves as a showcase of premium web design and frontend development skills.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Key Features
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* ✨ Modern and elegant design
+* 🎌 Japanese-inspired visual identity
+* 📱 Fully responsive interface
+* 🎭 Smooth animations and transitions
+* ⚡ Performance and UX optimized
+* 🚀 Built with Next.js
